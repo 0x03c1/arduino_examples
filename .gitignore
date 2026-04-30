@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+*.o
+*.out
+*.elf
+*.hex
+*.bin
+
+# Python cache (caso use scripts auxiliares)
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.*
+!.env.example
