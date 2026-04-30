@@ -168,8 +168,6 @@ Lê temperatura e umidade de um DHT11 sob comando serial e controla três LEDs c
 - **Código:** [`arduino_examples-improved/12_Challenge_LDR_Traffic_Light/12_Challenge_LDR_Traffic_Light.ino`](./arduino_examples-improved/12_Challenge_LDR_Traffic_Light/12_Challenge_LDR_Traffic_Light.ino)
 - **Simulador:** [Tinkercad](https://www.tinkercad.com/things/4REiulvRIdV-desafio-poste-ldr)
 
-> ⚠️ O nome da pasta foi mantido por compatibilidade, mas este desafio usa **DHT11** (temperatura/umidade), não LDR. Considere renomear no futuro.
-
 ---
 
 ## Saídas Analógicas (PWM)
