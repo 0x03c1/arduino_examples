@@ -27,7 +27,7 @@ Os sketches estão em [`arduino_examples-improved/`](./arduino_examples-improved
   - [10. Desafio: Semáforo via Serial](#10-desafio-semáforo-via-serial)
 - [Entradas Analógicas](#entradas-analógicas)
   - [11. Leitura de potenciômetro](#11-leitura-de-potenciômetro)
-  - [12. Desafio: Estação meteorológica com semáforo](#12-desafio-estação-meteorológica-com-semáforo)
+  - [12. Desafio: Sensor LDR](#12-desafio-sensor-ldr)
 - [Saídas Analógicas (PWM)](#saídas-analógicas-pwm)
   - [13. Dimmer simples](#13-dimmer-simples)
   - [14. Dimmer com `map()`](#14-dimmer-com-map)
@@ -37,10 +37,8 @@ Os sketches estão em [`arduino_examples-improved/`](./arduino_examples-improved
 
 ## Pré-requisitos
 
-- **Hardware:** Arduino UNO (ou compatível), cabo USB tipo B, protoboard, jumpers, LEDs, resistores 220 Ω, push buttons, potenciômetro 10 kΩ. Alguns exemplos usam DHT11 e LDR.
+- **Hardware:** Arduino UNO (ou compatível), cabo USB tipo B, protoboard, jumpers, LEDs, resistores 220 Ω, push buttons, potenciômetro 10 kΩ e LDR.
 - **Software:** [Arduino IDE 2.x](https://www.arduino.cc/en/software).
-- **Bibliotecas externas** (instalar via *Library Manager*):
-  - `DHT sensor library` (Adafruit) — usado no exemplo 12.
 
 ## Como usar
 
@@ -161,11 +159,12 @@ Lê um potenciômetro e imprime o valor (0–1023) na serial.
 - **Código:** [`arduino_examples-improved/11_Potentiometer/11_Potentiometer.ino`](./arduino_examples-improved/11_Potentiometer/11_Potentiometer.ino)
 - **Simulador:** [Tinkercad](https://www.tinkercad.com/things/4cCe5GLhZro-dados-potenciometro)
 
-### 12. Desafio: Estação meteorológica com semáforo
+### 12. Desafio: Sensor LDR
 
-Lê temperatura e umidade de um DHT11 sob comando serial e controla três LEDs como sinalizador. *(Requer biblioteca `DHT sensor library` da Adafruit.)*
+Lê a luminosidade com um sensor LDR e aciona um LED com base em um limiar de luz.
 
-- **Código:** [`arduino_examples-improved/12_Challenge_LDR_Traffic_Light/12_Challenge_LDR_Traffic_Light.ino`](./arduino_examples-improved/12_Challenge_LDR_Traffic_Light/12_Challenge_LDR_Traffic_Light.ino)
+- **Conceitos:** `analogRead`, limiar de decisão, leitura de sensor analógico
+- **Código:** [`arduino_examples-improved/12_Challenge_LDR_Sensor/12_Challenge_LDR_Sensor.ino`](./arduino_examples-improved/12_Challenge_LDR_Sensor/12_Challenge_LDR_Sensor.ino)
 - **Simulador:** [Tinkercad](https://www.tinkercad.com/things/4REiulvRIdV-desafio-poste-ldr)
 
 ---
